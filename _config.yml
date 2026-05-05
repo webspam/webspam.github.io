@@ -1,1 +1,11 @@
-theme: jekyll-theme-midnight
+# Source - https://stackoverflow.com/a/78095155
+# Posted by dabell, modified by community. See post 'Timeline' for change history
+# Retrieved 2026-05-06, License - CC BY-SA 4.0
+
+# In _config.yml
+# theme: minima
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme
+minima:
+  skin: dark # Or auto if you want it to switch with your system settings.
