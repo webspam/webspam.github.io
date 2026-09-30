@@ -1,0 +1,19 @@
+{
+  "name": "webspam-github-io",
+  "private": true,
+  "description": "webspam.github.io landing site",
+  "license": "MIT",
+  "author": "webspam",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "format": "oxfmt"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.71.0",
+    "vitepress": "^2.0.0-alpha.17"
+  },
+  "packageManager": "pnpm@12.5.1"
+}
