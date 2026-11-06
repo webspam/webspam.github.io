@@ -8,11 +8,11 @@ When trying to find an issue, the fastest way is typically bisecting your mod li
 
 Finding _possible_ causes of issues.
 
-1. Remove half the mods from your game directory.
-1. Test.
-1. If the problem goes away, swap to the other half.
-1. Test.
-1. Repeat the above steps until you have narrowed it down completely.
+1. Remove half the mods from your game directory
+1. Test
+1. If the problem goes away, swap to the other half
+   - Test again
+1. Repeat the above steps until you have narrowed it down completely
 
 ## Isolation testing
 
@@ -25,19 +25,30 @@ Most of the time, this will confirm a single mod causing the issue.
 
 ## Manual installation
 
-Open the mod zip. If it contains any or all of the following folders, manual install just means copying them directly into the game directory.
+Mod managers are great, but do introduce a bit of complexity. On occasion, they can cause issues - manual installation rules that out.
 
-- `bin`
-- `dlc`
-- `mods`
+Most mods are quite simple, and just need to be copied into the game directory.
+
+:::note
+This method is for mod zips that only contain some/all of these folders: `bin`, `dlc`, `mods`
+:::
+
+1. Open the mod zip & copy the entire contents (the `bin`, `dlc`, and/or `mods` directories)
+1. Paste the contents into your game directory, e.g. `C:\Games\The Witcher 3 Wild Hunt GOTY\`
 
 ## Clean uninstall
 
-If you had it installed previously, remove the mod directories from:
+You can remove a mod from the game by removing the mod's subdirectory from your game directory (e.g. `C:\Games\The Witcher 3 Wild Hunt GOTY\`):
 
-1. `Mods`
-2. `dlc`
+1. Open the game directory, e.g. `C:\Games\The Witcher 3 Wild Hunt GOTY\`
+1. Open the `Mods` directory
+1. Remove the `modModNameHere` directory
+1. Repeat the above process for the `dlc` directory
 
-And remove the config (mod menu XML) from:
+If present, remove the mod menu XML from:
 
-- `bin\config\r4game\user_config_matrix\pc`
+- `bin\config\r4game\user_config_matrix\pc\`
+
+:::tip
+If in doubt, check the contents of the zip that was used to install the mod - that will list everything that needs to be deleted.
+:::
