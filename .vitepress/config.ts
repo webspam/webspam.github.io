@@ -23,6 +23,10 @@ export default defineConfig({
     sidebar: {
       "/wiki/": [
         {
+          text: "General",
+          items: [{ text: "Troubleshooting", link: "/wiki/troubleshooting" }],
+        },
+        {
           text: "REDkit",
           items: [{ text: "Building .rsblob files", link: "/wiki/scripts/rsblob" }],
         },
